@@ -79,10 +79,10 @@ while tries > 0:
     if guess in guessed_correctly or guess in guessed_incorrectly:
         print("You've already guessed", guess)
     elif guess in word:
-        print("Great Job! You guessed correctly!")
+        print("Great Job! You guessed the letter correctly!")
         guessed_correctly.append(guess)
     else:
-        print("Sorry! You guessed incorrectly!")
+        print("Sorry! You guessed the letter incorrectly!")
         hangman_count = hangman_count + 1
         tries = tries-1
         guessed_incorrectly.append(guess)
@@ -92,4 +92,4 @@ while tries > 0:
 if tries>0:
     print("Congratulations! You won!")
 else:
-    print("Sorry! You lost. Game over.")
+    print("You lost. Game over.")
